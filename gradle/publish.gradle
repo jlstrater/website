@@ -5,7 +5,7 @@ gitPublish {
 
     // what to publish, this is a standard CopySpec
     contents {
-        from 'src/asciidoc'
+        from 'build/docs'
     }
 
     commitMessage = 'Publishing a new page'
