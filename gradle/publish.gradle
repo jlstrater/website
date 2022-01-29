@@ -1,0 +1,12 @@
+gitPublish {
+    repoUri = 'git@github.com:jlstrater/website.git'
+
+    branch = 'gh-pages'
+
+    // what to publish, this is a standard CopySpec
+    contents {
+        from 'src/asciidoc'
+    }
+
+    commitMessage = 'Publishing a new page'
+}
