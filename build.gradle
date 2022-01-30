@@ -21,6 +21,7 @@ asciidoctor {
             include 'images/**'
             include 'css/**'
             include 'js/**'
+            include 'pdf-themes/**'
         }
     }
     baseDirFollowsSourceDir()

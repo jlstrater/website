@@ -9,18 +9,31 @@ endif::[]
 :sectlinks:
 :table-caption!:
 :showtitle!:
+:nofooter:
 :stylesdir: css
 :stylesheet: adoc-riak.css
 :linkcss:
+:pdf-themesdir: pdf-themes
+:pdf-theme: custom
 :description: Jenn's Resume Website
 
 ifdef::backend-pdf[]
-[frame=none,grid=none,cols="1*^"]
+[frame=none,grid=none,width=70%,align=center,cols="^27,^30,^22,^20"]
 |===
-|    icon:home@fas[1x]  3733 Noble Ave N
+
+4+| icon:home@fas[1x]  3733 Noble Ave N +
     Robbinsdale, MN 55422
-| icon:phone@fas[1x]  612-293-8525
+
+4+| icon:phone@fas[1x]  612-293-8525
+
+| icon:globe@fas[1x] https://www.jennstrater.com[jennstrater.com]
+| icon:envelope@far[1x] jenn.strater@gmail.com
+| icon:twitter@fab[1x]  https://twitter.com/codeJENNerator[codeJENNerator]
+| icon:github@fab[1x]  https://github.com/jlstrater[jlstrater]
 |===
+
+'''
+
 endif::[]
 
 ifdef::backend-html5[]
@@ -32,33 +45,25 @@ ifdef::backend-html5[]
 | icon:github[1x]  https://github.com/jlstrater[jlstrater]
 | icon:download[1x] link:index.pdf[pdf resume^]
 |===
-endif::[]
 
-ifdef::backend-pdf[]
-[frame=none,grid=none,cols="^~,^30,^20,^~"]
-|===
-| icon:globe@fas[1x] https://www.jennstrater.com[jennstrater.com]
-| icon:envelope@far[1x] jenn.strater@gmail.com
-| icon:twitter@fab[1x]  https://twitter.com/codeJENNerator[codeJENNerator]
-| icon:github@fab[1x]  https://github.com/jlstrater[jlstrater]
-|===
-endif::[]
-
-.Senior engineer and leader with 10 years experience specializing in developer/internal tooling for the Java ecosystem.
+.*Senior engineer and leader with 10 years experience specializing in developer/internal tooling for the Java ecosystem.*
 [frame=none,grid=none]
 |===
 |===
 
-== Professional Experience
+endif::[]
 
-=== Target, _Remote_
+[.first-heading]
+== icon:briefcase[1x] Professional Experience
+
+=== icon:bullseye[1x] Target, _Remote_
 
 ==== June 2021 - present
 
 Member of a small team maintaining 30+ microservices and hundreds of batch jobs that pipe targeted and/or personalized marketing messaging to various platforms (email, SMS, push) on a large scale. Microservices are Java with Spring Boot and batch jobs use Scala with Spark. Database technologies include Cassandra, PostgreSQL, and Hive.
 
 ifdef::backend-pdf[]
-===== Accomplishments
+==== Accomplishments
 
     * moved common code across 30+ projects into 10 libraries
     * established Gradle, Vela (CI), Artifactory release pipeline for libraries
@@ -68,7 +73,7 @@ ifdef::backend-pdf[]
     * enhanced observability by adding more metrics and graphs in Grafana
 endif::[]
 
-=== Joe Biden for President, _Remote_
+=== icon:check[1x] Joe Biden for President, _Remote_
 
 ==== June 2020 - November 2020
 
@@ -79,7 +84,7 @@ endif::[]
     * performed website QA especially a11y and i18n
     * improved build performance and security with CodeKit, npm, and Gradle
 
-=== Gradle, _Remote EU & Remote US_
+=== icon:cogs[1x] Gradle, _Remote EU & Remote US_
 
 ==== October 2018 - May 2020
 
@@ -89,15 +94,15 @@ endif::[]
     * acted as an intermediary between the millions of Gradle developers and Gradle’s engineering teams including basic support, providing references to the relevant documentation, and escalating as needed
     * Promoted Gradle as a thought leader in Developer Productivity
 
-==== Developer Advocacy Team Lead May 2019 to May 2020
+==== Developer Advocacy Team Lead, _May 2019 to May 2020_
     * set long-term strategy with upper-level management
     * led collaborative projects with engineering, marketing, and sales
     * managed the event and content strategy for advocacy topics
     * reviewed content and code for Developer Advocacy and other teams
 
-=== Zenjob, _Berlin, Germany_
+=== icon:mobile[1x] Zenjob, _Berlin, Germany_
 
-==== Senior Engineer June 2017 - September 2018
+==== Senior Engineer, June 2017 - September 2018
 
 * maintained a Grails-based internal admin dashboard to monitor millions of transactions per day
 * added static analysis and code coverage tooling into the build pipeline increasing stability and reducing bugs in the codebase
@@ -114,19 +119,23 @@ endif::[]
 ==== Senior Consultant, March 2015 - August 2016
 Client: Peoplenet
 
+ifdef::backend-html5[]
 {empty} +
+endif::[]
 
 === Altegra Health, _Minneapolis, MN, USA_
 
 ==== Software Engineer, June 2013 - February 2016
 
+ifdef::backend-html5[]
 {empty} +
+endif::[]
 
-=== Group DCA, Parsippany, NJ, USA
+=== Group DCA, _Parsippany, NJ, USA_
 
 ==== Web Developer, January 2012 - May 2013
 
-== Education
+== icon:university[1x] Education
 
 === Technical University of Denmark, _Lyngby, Denmark_
 
@@ -135,34 +144,32 @@ Client: Peoplenet
 ifdef::backend-html5[]
 * Master’s level courses on security, distributed systems, static analysis, compiler design, entrepreneurship, and more
 * completed a research project involving static analysis for the Groovy programming language
-endif::[]
 
 {empty} +
+endif::[]
 
 === Hamilton College, _Clinton, NY_
 
 ==== Bachelor’s Degree, Completed December 2011
 concentration in computer science
 
-== Books
+== icon:book[1x] Books
 
 === 97 Things Every Java Programmer Should Know
 - Builds Don’t Have To Be Slow and Unreliable
 - Only Build the Parts That Change and Reuse the Rest
 - Open Source Projects Aren’t Magic
 
-== Honors & Awards
+== icon:trophy[1x] Honors & Awards
 
 - Participant of PANDA Women Leadership Contest 2018
 - 2016-2017 Fulbright US Student Program in Denmark
 
-== Community Work
+== icon:users[1x] Community Work
 
 * Owner of the Groovy Community Slack
 * Crew/Committee member for various developer conferences
+* Open Source Contributions to Codenarc rules, Spring REST Docs examples, Groovy docs, Gradle docs, guides, and various plugins
 ifdef::backend-html5[]
-* 2020 Digital Director, 2021-222 At-Large Director of a state-wide political organization
+* 2020 Digital Director, 2021-2022 At-Large Director of a state-wide political organization
 endif::[]
-
-== Open Source Contributions
-Codenarc rules, Spring REST Docs examples, Groovy docs, Gradle docs, guides, and various plugins
