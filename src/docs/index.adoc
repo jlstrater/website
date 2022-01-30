@@ -1,3 +1,4 @@
+= Jennifer "Jenn" Strater
 :doctype: article
 :icons: font
 :source-highlighter: highlightjs
@@ -6,36 +7,162 @@ ifdef::backend-html5[]
 endif::[]
 :toclevels: 2
 :sectlinks:
-:sectnums:
 :table-caption!:
 :showtitle!:
-:showauthor!:
+:stylesdir: css
+:stylesheet: adoc-riak.css
+:linkcss:
 :description: Jenn's Resume Website
-
-= Jennifer "Jenn" Strater
 
 ifdef::backend-pdf[]
 [frame=none,grid=none,cols="1*^"]
 |===
-|    icon:home[1x]  3733 Noble Ave N
+|    icon:home@fas[1x]  3733 Noble Ave N
     Robbinsdale, MN 55422
-| icon:phone[1x]  612-293-8525
+| icon:phone@fas[1x]  612-293-8525
 |===
 endif::[]
 
-[frame=none,grid=none,cols="^23,^31,^23,^23"]
+ifdef::backend-html5[]
+[frame=none,grid=none,cols="^~,^30,^20,^~,^~"]
 |===
-|icon:globe[1x] https://www.jennstrater.com[jennstrater.com]
-|  icon:envelope[1x] jenn.strater@gmail.com
+| icon:globe[1x] https://www.jennstrater.com[jennstrater.com]
+| icon:envelope[1x] jenn.strater@gmail.com
 | icon:twitter[1x]  https://twitter.com/codeJENNerator[codeJENNerator]
 | icon:github[1x]  https://github.com/jlstrater[jlstrater]
+| icon:download[1x] link:index.pdf[pdf resume^]
 |===
+endif::[]
+
+ifdef::backend-pdf[]
+[frame=none,grid=none,cols="^~,^30,^20,^~"]
+|===
+| icon:globe@fas[1x] https://www.jennstrater.com[jennstrater.com]
+| icon:envelope@far[1x] jenn.strater@gmail.com
+| icon:twitter@fab[1x]  https://twitter.com/codeJENNerator[codeJENNerator]
+| icon:github@fab[1x]  https://github.com/jlstrater[jlstrater]
+|===
+endif::[]
 
 .Senior engineer and leader with 10 years experience specializing in developer/internal tooling for the Java ecosystem.
 [frame=none,grid=none]
 |===
 |===
 
-
-[experience]
 == Professional Experience
+
+=== Target, _Remote_
+
+==== June 2021 - present
+
+Member of a small team maintaining 30+ microservices and hundreds of batch jobs that pipe targeted and/or personalized marketing messaging to various platforms (email, SMS, push) on a large scale. Microservices are Java with Spring Boot and batch jobs use Scala with Spark. Database technologies include Cassandra, PostgreSQL, and Hive.
+
+ifdef::backend-pdf[]
+===== Accomplishments
+
+    * moved common code across 30+ projects into 10 libraries
+    * established Gradle, Vela (CI), Artifactory release pipeline for libraries
+    * upgraded 30+ microservices and libraries to Gradle 7 and Spring Boot 2.6
+    * added dependency scanning and other security tooling to CI/CD pipeline
+    * setup a staging environment including configuring clusters, database tables, and throttling for incoming Kafka messages
+    * enhanced observability by adding more metrics and graphs in Grafana
+endif::[]
+
+=== Joe Biden for President, _Remote_
+
+==== June 2020 - November 2020
+
+    * enabled the 50k+ volunteers nationwide and 20k+ in battleground states to send millions of text messages per day
+    * constrained by integration tools with 1rps rate limit, still managed to handle 7rps spikes in a system built with Ratpack, Groovy, Redis, Caffeine, Dropwizard, and more
+    * transformed 5+ GB CSV files from vendors into s3 and spectrum tables
+    * created slack bots to integrate with texting program security
+    * performed website QA especially a11y and i18n
+    * improved build performance and security with CodeKit, npm, and Gradle
+
+=== Gradle, _Remote EU & Remote US_
+
+==== October 2018 - May 2020
+
+==== Developer Advocate
+    * wrote Java and Groovy-based POCs for Gradle and Gradle Enterprise features using both the Groovy and Kotlin Gradle DSLs
+    * maintained the infrastructure for various documentation projects using Asciidoc, Jekyll, Gradle, GitHub Pages, TeamCity, IntelliJ Idea, and more
+    * acted as an intermediary between the millions of Gradle developers and Gradle’s engineering teams including basic support, providing references to the relevant documentation, and escalating as needed
+    * Promoted Gradle as a thought leader in Developer Productivity
+
+==== Developer Advocacy Team Lead May 2019 to May 2020
+    * set long-term strategy with upper-level management
+    * led collaborative projects with engineering, marketing, and sales
+    * managed the event and content strategy for advocacy topics
+    * reviewed content and code for Developer Advocacy and other teams
+
+=== Zenjob, _Berlin, Germany_
+
+==== Senior Engineer June 2017 - September 2018
+
+* maintained a Grails-based internal admin dashboard to monitor millions of transactions per day
+* added static analysis and code coverage tooling into the build pipeline increasing stability and reducing bugs in the codebase
+* architected and implemented backend APIs
+* led the project and completed a majority of the work for a Grails 3.0.17 to 3.3.6 migration. This included updates to the relevant dependencies and build tools.
+* was responsible for various leadership tasks related to
+    ** hiring and recruiting
+    ** improving development processes
+    ** mentoring working students
+    ** training developers new to Groovy, Grails, and Gradle
+
+=== Object Partners, Inc., _Minneapolis, MN, USA_
+
+==== Senior Consultant, March 2015 - August 2016
+Client: Peoplenet
+
+{empty} +
+
+=== Altegra Health, _Minneapolis, MN, USA_
+
+==== Software Engineer, June 2013 - February 2016
+
+{empty} +
+
+=== Group DCA, Parsippany, NJ, USA
+
+==== Web Developer, January 2012 - May 2013
+
+== Education
+
+=== Technical University of Denmark, _Lyngby, Denmark_
+
+==== Fulbright U.S. Student Program, August 2016 - May 2017
+
+ifdef::backend-html5[]
+* Master’s level courses on security, distributed systems, static analysis, compiler design, entrepreneurship, and more
+* completed a research project involving static analysis for the Groovy programming language
+endif::[]
+
+{empty} +
+
+=== Hamilton College, _Clinton, NY_
+
+==== Bachelor’s Degree, Completed December 2011
+concentration in computer science
+
+== Books
+
+=== 97 Things Every Java Programmer Should Know
+- Builds Don’t Have To Be Slow and Unreliable
+- Only Build the Parts That Change and Reuse the Rest
+- Open Source Projects Aren’t Magic
+
+== Honors & Awards
+
+- Participant of PANDA Women Leadership Contest 2018
+- 2016-2017 Fulbright US Student Program in Denmark
+
+== Community Work
+
+* Owner of the Groovy Community Slack
+* Crew/Committee member for various developer conferences
+ifdef::backend-html5[]
+* 2020 Digital Director, 2021-222 At-Large Director of a state-wide political organization
+endif::[]
+
+== Open Source Contributions
+Codenarc rules, Spring REST Docs examples, Groovy docs, Gradle docs, guides, and various plugins

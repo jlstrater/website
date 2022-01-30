@@ -16,9 +16,18 @@ asciidoctor {
     sources {
         include '*.adoc'
     }
+    resources {
+        from(sourceDir) {
+            include 'images/**'
+            include 'css/**'
+            include 'js/**'
+        }
+    }
+    baseDirFollowsSourceDir()
     outputDir  file('build/docs')
-}
+    outputOptions {
+        backends = ['html5','pdf']
+        separateOutputDirs = false
+    }
 
-asciidoctorPdf {
-    sourceDir file('src/docs')
 }
