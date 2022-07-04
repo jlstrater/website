@@ -17,6 +17,13 @@ endif::[]
 :pdf-theme: custom
 :description: Jenn's Resume Website
 
+ifdef::backend-html5[]
+[IMPORTANT]
+====
+[big aqua]*Please visit https://www.jenn4mn.com[jenn4mn.com], for information on Jenn's Robbinsdale City Council race.*
+====
+endif::[]
+
 ifdef::backend-pdf[]
 [frame=none,grid=none,width=70%,align=center,cols="^27,^30,^22,^20"]
 |===
